@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Discord Timestamp Tool</title>
+    <style>
+        body {
+            background-color: #eee;
+            color: black;
+        }
+        a {
+            color: black;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: #ddd;
+            }
+            a {
+                color: #ddd;
+            }
+        }
+
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .result2 {
+            text-indent:120px;
+        }
+        .result {
+            text-indent:25%;
+        }
+
+        .footer {
+            text-align: center;
+            position:absolute;
+            bottom:0;
+            width:95%;
+        }
+    </style>
+  
+<link rel="preload" href="/timestamps/index-5ad82df4ad751840_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/timestamps/index-5ad82df4ad751840.js"></head>
+  <body>
+    <noscript>This tool requires Javascript to run in the broswer.<br>If you are uncomfortable running Javascript in your browser, please feel free to download and modify the source code of this tool to use locally!</noscript>
+  
+
+<script type="module">import init from '/timestamps/index-5ad82df4ad751840.js';init('/timestamps/index-5ad82df4ad751840_bg.wasm');</script></body></html>
